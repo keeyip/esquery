@@ -1,5 +1,5 @@
 Forked Additions:
-* mustache selector for custom matchers, `query('{dosomething arg0 arg1 arg2}')` calls `query.matchMustache(node, selector, ancestry)::boolean`, 
+* mustache selector for custom matchers, `query('Program:{dosomething arg0 arg1 arg2}')` calls `query.matchMustache(node, selector, ancestry)::boolean`, 
 
 ESQuery is a library for querying the AST output by Esprima for patterns of syntax using a CSS style selector system. Check out the demo:
 

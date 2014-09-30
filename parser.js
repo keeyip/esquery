@@ -2259,13 +2259,13 @@ var result = (function(){
         
         pos0 = pos;
         pos1 = pos;
-        if (input.charCodeAt(pos) === 123) {
-          result0 = "{";
-          pos++;
+        if (input.substr(pos, 2) === ":{") {
+          result0 = ":{";
+          pos += 2;
         } else {
           result0 = null;
           if (reportFailures === 0) {
-            matchFailed("\"{\"");
+            matchFailed("\":{\"");
           }
         }
         if (result0 !== null) {
