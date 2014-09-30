@@ -1,8 +1,8 @@
 {
   "name": "esquery",
   "preferGlobal": false,
-  "version": "0.3.0",
-  "author": "Joel Feenstra <jrfeenst+esquery@gmail.com>",
+  "version": "0.3.1",
+  "author": "Kee-Yip Chan <keeyipchan@gmail.com>",
   "description": "A query library for ECMAScript AST using a CSS selector like query language.",
   "main": "esquery.js",
   "files": [
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jrfeenst/esquery.git"
+    "url": "https://github.com/keeyip/esquery.git"
   },
   "keywords": [
     "ast",

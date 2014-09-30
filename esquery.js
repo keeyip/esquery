@@ -132,6 +132,9 @@
                         matches(node, selector.left, ancestry) &&
                         adjacent(node, selector.right, ancestry);
 
+                case 'mustache':
+                    return query.matchMustache(node, selector, ancestry);
+
                 case 'nth-child':
                     return matches(node, selector.right, ancestry) &&
                         nthChild(node, ancestry, function (length) {
@@ -291,6 +294,12 @@
         query.parse = parse;
         query.match = match;
         query.matches = matches;
+
+        // All external code to override this function.
+        query.matchMustache = function() {
+            return false;
+        }
+
         return query.query = query;
     }
 
